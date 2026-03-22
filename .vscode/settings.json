@@ -1,4 +1,121 @@
 {
     "docsifyPreview.indexFile": "/docs/index.html",
-    "markdown.validate.enabled": false
+    "markdown.validate.enabled": false,
+     "github.copilot.hackModels": {
+        "base": {
+            "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+            "baseUrl": "https://api.vectorengine.ai/v1",
+            "model": "qwen-plus",
+            "supported_endpoints": [
+                "/chat/completions"
+            ]
+        },
+        "inline": {
+            "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+            "baseUrl": "https://api.vectorengine.ai/v1",
+            "model": "qwen3-coder-flash",
+            "mode": "chat",
+            "remove_prefix": true
+        },
+        "embedding": {
+            "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+            "baseUrl": "https://api.vectorengine.ai/v1",
+            "model": "text-embedding-3-small",
+        },
+        "next": {
+            "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+            "baseUrl": "https://api.vectorengine.ai/v1",
+            "model": "qwen3-coder-flash",
+        },
+        "fast": {
+            "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+            "baseUrl": "https://api.vectorengine.ai/v1",
+            "model": "glm-4-air",
+            "capabilities": {
+                "type": "chat",
+                "family": "custom",
+                "tokenizer": "o200k_base",
+                "supports": {
+                    "streaming": true,
+                    "thinking": false,
+                    "vision": false,
+                    "tool_calls": true,
+                    "parallel_tool_calls": true
+                }
+            }
+        },
+        "extras": [
+            {
+                "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+                "baseUrl": "https://api.vectorengine.ai/v1",
+                "model": "opus-4-6",
+                "is_chat_default": true,
+                "capabilities": {
+                    "type": "chat",
+                    "family": "custom",
+                    "tokenizer": "o200k_base",
+                    "supports": {
+                        "streaming": true,
+                        "thinking": false,
+                        "vision": false,
+                        "tool_calls": true,
+                        "parallel_tool_calls": true
+                    }
+                },
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+        {
+            "apiKey": "your-anthropic-api-key",     // proxy 中配置的 ANTHROPIC_API_KEY
+            "baseUrl": "http://localhost:8082/v1",  // claude-code-proxy 的 url ，且必须添加 '/v1' 子路径
+            "model": "claude-sonnet-44",
+                "capabilities": {
+                    "type": "chat",
+                    "family": "claude-haiku",
+                    "tokenizer": "o200k_base",
+                    "supports": {
+                        "streaming": true,
+                        "thinking": true,
+                        "vision": true,
+                        "tool_calls": true,
+                        "parallel_tool_calls": true
+                    },
+                    "limits": {
+                        "max_context_window_tokens": 32000,
+                        "max_output_tokens": 8000,
+                        "max_prompt_tokens": 24000
+                }
+                },
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
+                "baseUrl": "https://api.vectorengine.ai/v1",
+                "model": "claude-3-haiku-20240307",
+                "capabilities": {
+                    "type": "chat",
+                    "family": "claude-haiku-35",
+                    "tokenizer": "o200k_base",
+                    "supports": {
+                        "streaming": true,
+                        "thinking": true,
+                        "vision": true,
+                        "tool_calls": true,
+                        "parallel_tool_calls": true
+                    },
+                    "limits": {
+                        "max_context_window_tokens": 32000,
+                        "max_output_tokens": 8000,
+                        "max_prompt_tokens": 24000
+                }
+                },
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+        ]
+    }
 }
