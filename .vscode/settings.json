@@ -1,6 +1,5 @@
 {
     "docsifyPreview.indexFile": "/docs/index.html",
-    "markdown.validate.enabled": false,
      "github.copilot.hackModels": {
         "base": {
             "apiKey": "sk-zBsSeEV8Jsnr6TD3rhTUkCeJv2EC8Zy1NFHoG8fyXCDvY2O4",
